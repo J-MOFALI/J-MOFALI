@@ -1,0 +1,900 @@
+/** Desktop First **/
+
+
+/** Global Settings **/
+
+body {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    font-size: 13px;
+    font-weight: normal;
+    width: 100vw;
+}
+
+#bloc_page {
+    width: 90vw;
+    margin: auto;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.imagefont {
+    height: 13px;
+    width: 13px;
+}
+
+strong {
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+
+/** Header's Settings **/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin: 9px 0px 40px 0px;
+}
+
+nav {
+    margin-top: 0px;
+    margin-bottom: 16.5px;
+}
+
+nav a {
+    text-decoration: none;
+    margin-right: 15px;
+    margin-top: 20px;
+    justify-content: space-between;
+    color: black;
+    padding: 19px 20px 0px 20px;
+    font-size: 1.2em;
+}
+
+nav a:hover {
+    color: #0065FC;
+    border-top: 4px #0065FC solid;
+}
+
+.suscribe {
+    border-top: none;
+    color: #0065FC;
+    margin-bottom: 22px;
+}
+
+
+/** Bloc Search **/
+
+.title {
+    padding: 0em 1.5em 0em 0em;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+.secondline {
+    font-family: 'Raleway', sans-serif;
+    margin-top: -10px;
+    margin-bottom: 20px;
+}
+
+.search {
+    padding: 1em 1em 0em 1em;
+    max-width: 320px;
+    width: 100%;
+    margin: -10px 0px 30px -13px;
+}
+
+.search .imagefont {
+    height: 17px;
+    width: 17px;
+}
+
+.search label {
+    background: white;
+    padding: 12px 15px 11px 15px;
+    align-items: center;
+    border: 2px #F2F2F2 solid;
+    border-radius: 15px 0px 0px 15px;
+    margin: 0px 0px 0px 0px;
+}
+
+.search input {
+    background: white;
+    padding: 12px 10px 11px 10px;
+    align-items: center;
+    border: 2px #F2F2F2 solid;
+    margin: 0px -5px 0px -5px;
+}
+
+.search button {
+    background: #0065FC;
+    padding: 12px 10px 11px 10px;
+    align-items: center;
+    border: 2px white solid;
+    border-radius: 0px 15px 15px 0px;
+    color: #F2F2F2;
+    margin: 0px 0px 0px 0px;
+}
+
+.search ::placeholder {
+    font-size: 1.2em;
+    color: black;
+}
+
+#search {
+    display: none;
+}
+
+
+/** Bloc Filters **/
+
+#bloc_filter {
+    display: flex;
+    font-size: 1.3em;
+    color: black;
+    margin: 2em 0em 1em 0em;
+    font-weight: bold;
+    flex-wrap: wrap;
+}
+
+#bloc_filter .title {
+    padding: 13px 0px 25px 0px;
+}
+
+#bloc_filter .form {
+    margin-bottom: 20px;
+    position: relative;
+    display: flex;
+    height: 20px;
+    align-items: center;
+    padding: 15px 15px 15px 30px;
+}
+
+#bloc_filter .label {
+    background: #DEEBFF;
+    border: 1px #DEEBFF solid;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    position: absolute;
+    left: 25px;
+    color: #0065FC;
+}
+
+#bloc_filter .input {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    padding: 0px 10px 0px 40px;
+    border: 2px #F2F2F2 solid;
+    margin-right: 0.1px;
+    border-radius: 20px 20px 20px 20px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+#bloc_filter .input:hover {
+    background: #DEEBFF;
+    padding: 0px 10px 0px 40px;
+    align-items: center;
+    border: 2px white solid;
+    width: auto;
+    margin-right: 10px;
+    border-radius: 20px 20px 20px 20px;
+    color: #0065FC;
+}
+
+
+/* Information */
+
+#info {
+    display: flex;
+    margin: 0px 0px 20px 0px;
+    color: #202124;
+}
+
+.Informationlogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20px;
+    width: 20px;
+    border: 1px #F2F2F2 solid;
+    border-radius: 50%;
+    margin-top: -2px;
+    margin-right: 10px;
+    color: #0065FC;
+}
+
+.infotext {
+    font-size: 1.3em;
+}
+
+
+/** Section accomodation **/
+
+#accomodation {
+    display: flex;
+    transition: 1s;
+}
+
+#accomodation h2 {
+    color: black;
+    font-weight: bold;
+    font-size: 1.6em;
+    font-family: sans-serif;
+    text-align: left;
+}
+
+#accomodation p {
+    color: black;
+}
+
+
+/** Article Accomodation **/
+
+#accomodation article {
+    background-color: #F2F2F2;
+    position: relative;
+    width: 63vw;
+    height: 550px;
+    border-radius: 15px 15px 15px 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+#accomodation .text_top {
+    display: flex;
+    width: 100%;
+    margin: 3% 50% 4% 5%;
+    color: black;
+    font-weight: bold;
+    font-size: 1.6em;
+    font-family: sans-serif;
+}
+
+#accomodation .text_bottom {
+    display: flex;
+    width: 32%;
+    margin: 6% 60% 3% 5%;
+    color: black;
+    font-weight: bold;
+    font-size: 1.4em;
+    font-family: sans-serif;
+}
+
+#accomodation #pictures {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+    height: 68%;
+    width: 90%;
+    margin: 0% 5% 0% 5%;
+}
+
+#pictures p {
+    color: black;
+    font-size: 1em;
+    height: 97%;
+}
+
+#pictures #image_hebegement1 {
+    height: 50%;
+    width: 30%;
+    background: url('../images/hebergements/4_small/aubergelacannebiere.jpg') no-repeat;
+    background-size: cover;
+    background-position: right 1px bottom 45px;
+    position: relative;
+    border: 4px white solid;
+    border-radius: 15px 15px 15px 15px;
+    margin-bottom: 30px;
+    box-shadow: 4px 4px 4px #ebebeb;
+}
+
+#pictures #image_hebegement2 {
+    height: 50%;
+    width: 30%;
+    background: url('../images/hebergements/4_small/hotelduport.jpg') no-repeat;
+    background-size: cover;
+    background-position: left 0px bottom 50px;
+    position: relative;
+    border: 4px white solid;
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: 4px 4px 4px #ebebeb;
+}
+
+#pictures #image_hebegement3 {
+    height: 50%;
+    width: 30%;
+    background: url('../images/hebergements/4_small/hotellesmouettes.jpg') no-repeat;
+    background-size: cover;
+    background-position: left 0px bottom 70px;
+    position: relative;
+    border: 4px white solid;
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: 4px 4px 4px #ebebeb;
+}
+
+#pictures #image_hebegement4 {
+    height: 50%;
+    width: 30%;
+    background: url('../images/hebergements/4_small/hoteldelamer.jpg') no-repeat;
+    background-size: cover;
+    background-position: right 0px bottom 20px;
+    position: relative;
+    border: 4px white solid;
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: 4px 4px 4px #ebebeb;
+}
+
+#pictures #image_hebegement5 {
+    height: 50%;
+    width: 30%;
+    background: url('../images/hebergements/4_small/aubergelepanier.jpg') no-repeat;
+    background-size: cover;
+    position: relative;
+    border: 4px white solid;
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: 4px 4px 4px #ebebeb;
+}
+
+#pictures #image_hebegement6 {
+    height: 50%;
+    width: 30%;
+    background: url('../images/hebergements/4_small/hotelchezamina.jpg') no-repeat;
+    background-size: cover;
+    background-position: left 0px bottom 10px;
+    position: relative;
+    border: 4px white solid;
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: 4px 4px 4px #ebebeb;
+}
+
+
+/* Description d'images */
+
+article .picture_description {
+    position: absolute;
+    bottom: -1px;
+    left: -1px;
+    background: white;
+    height: 40%;
+    width: 99%;
+    border: 4px white solid;
+    border-radius: 0px 0px 8px 8px;
+    text-align: justify;
+    align-items: center;
+    font-size: 0.6em;
+}
+
+article .stars {
+    margin-top: -50px;
+}
+
+
+/* Popular Accomdation **/
+
+#accomodation aside {
+    background-color: #F2F2F2;
+    width: 23vw;
+    height: 550px;
+    margin-left: 30px;
+    border-radius: 15px 15px 15px 15px;
+}
+
+#accomodation .texthebpop {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 82%;
+    margin: 7% 9% 4% 9%;
+    color: black;
+    font-weight: bold;
+    font-size: 1.6em;
+    font-family: sans-serif;
+}
+
+.texthebpop img {
+    margin-bottom: 5px;
+}
+
+#populaire #image_hebegement7 {
+    height: 134px;
+    width: 82%;
+    background: url('../images/hebergements/4_small/hotellesoleildumatin.jpg') no-repeat;
+    background-size: cover;
+    background-position: bottom 0px right 60px;
+    position: relative;
+    border: 4px white solid;
+    border-radius: 15px 15px 15px 15px;
+    margin: 0% 8% 5% 8%;
+    box-shadow: 4px 4px 4px #ebebeb;
+}
+
+#populaire #image_hebegement8 {
+    height: 134px;
+    width: 82%;
+    background: url('../images/hebergements/4_small/aucoeurdeleauchambresdhotes.jpg') no-repeat;
+    background-size: cover;
+    background-position: right 70px top -15px;
+    position: relative;
+    border: 4px white solid;
+    border-radius: 15px 15px 15px 15px;
+    margin: 0% 8% 5% 8%;
+    box-shadow: 4px 4px 4px #ebebeb;
+}
+
+#populaire #image_hebegement9 {
+    height: 134px;
+    width: 82%;
+    background: url('../images/hebergements/4_small/hoteltoutbleuetblanc.jpg') no-repeat;
+    background-size: 50% auto;
+    background-position: left 1px bottom -25px;
+    position: relative;
+    border: 4px white solid;
+    border-radius: 15px 15px 15px 15px;
+    margin: 0% 8% 5% 8%;
+    box-shadow: 4px 4px 4px #ebebeb;
+}
+
+aside .Image_description {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: white;
+    height: 100%;
+    width: 52%;
+    border-radius: 0px 8px 8px 0px;
+    text-align: justify;
+    align-items: center;
+    font-size: 0.6em;
+    padding-left: 20px;
+}
+
+aside .stars {
+    margin-top: 40%;
+}
+
+#accomodation a:hover {
+    transform: scale(1.2);
+}
+
+
+/** Section activities **/
+
+
+/* Section activités générale */
+
+#activities {
+    display: flex;
+    transition: 1s;
+    width: 90vw;
+}
+
+
+/* Section activités */
+
+#activities #activity {
+    background-color: white;
+    position: relative;
+    height: 500px;
+    margin: 10px 0px 20px 0px;
+    border-radius: 15px 15px 15px 15px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#activity a:hover {
+    transform: scale(1.2);
+}
+
+#activity h2 {
+    margin-bottom: 0px;
+    padding-bottom: 10px;
+    margin-top: 40px;
+    color: black;
+    font-size: 1.6em;
+    font-family: sans-serif;
+}
+
+#activities_bloc {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 400px;
+    width: 89vw;
+    padding: 0px 10px 0px 10px;
+}
+
+#activities #image1 {
+    height: 400px;
+    width: 22%;
+    background: url('../images/activites/4_small/vieuxport.jpg') no-repeat;
+    background-position: center;
+    position: relative;
+    border: 2px white solid;
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: 4px 4px 4px #ebebeb;
+    position: relative;
+}
+
+#activities #image2 {
+    height: 190px;
+    width: 22%;
+    padding: 3px 3px 3px 3px;
+    background: url('../images/activites/4_small/fortdepomegues.jpg') no-repeat;
+    background-position: center;
+    position: relative;
+    border: 2px white solid;
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: 4px 4px 4px #ebebeb;
+    margin: 0px 0px 10px 0px;
+}
+
+#activities #image3 {
+    height: 170px;
+    width: 22%;
+    padding: 3px 3px 3px 3px;
+    background: url('../images/activites/4_small/ilesdufrioul.jpg') no-repeat;
+    background-size: cover;
+    position: relative;
+    border: 2px white solid;
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: 4px 4px 4px #ebebeb;
+    margin: 10px 0px 0px 0px;
+}
+
+#activities #image4 {
+    height: 400px;
+    width: 22%;
+    padding: 3px 3px 3px 3px;
+    background: url('../images/activites/4_small/parcnationaldescalanques.jpg') no-repeat;
+    background-size: cover;
+    position: relative;
+    border: 2px white solid;
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: 4px 4px 4px #ebebeb;
+}
+
+#activities #image5 {
+    height: 170px;
+    width: 22%;
+    padding: 3px 3px 3px 3px;
+    background: url('../images/activites/4_small/notredamedelagarde.jpg') no-repeat;
+    background-size: cover;
+    position: relative;
+    border: 2px white solid;
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: 4px 4px 4px #ebebeb;
+    margin: 0px 0px 10px 0px;
+}
+
+#activities #image6 {
+    height: 190px;
+    width: 22%;
+    padding: 3px 3px 3px 3px;
+    background: url('../images/activites/4_small/parclongchamp.jpg') no-repeat;
+    background-size: cover;
+    position: relative;
+    border: 2px white solid;
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: 4px 4px 4px #ebebeb;
+    margin: 10px 0px 0px 0px;
+}
+
+#activity .nom {
+    position: absolute;
+    bottom: -20px;
+    left: -0.25px;
+    border-left: 1px white solid;
+    background: white;
+    height: 10%;
+    width: 97%;
+    min-width: auto;
+    overflow: auto;
+    border-radius: 0px 0px 14px 12px;
+    display: flex;
+    align-content: center;
+    font-size: 0.6em;
+    font-size: 1.3em;
+    padding: 3% 0% 3% 3%;
+    color: black;
+}
+
+
+/** Footer **/
+
+footer {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    background-color: #F2F2F2;
+    justify-content: left;
+    width: 100%;
+    padding-left: 0px;
+    margin-top: 40px;
+}
+
+footer ul {
+    flex-direction: column;
+    padding: 0px 10px 0px 0px;
+}
+
+footer h1 {
+    font-size: 1.3em;
+    font-weight: lighter;
+    font-family: sans-serif;
+}
+
+footer li {
+    padding-bottom: 10px;
+}
+
+footer .bloc_footer {
+    margin-left: 6%;
+    width: 30%;
+    margin-right: 1.69%;
+}
+
+
+/** Version Tablette **/
+
+@media (min-width: 768px) and (max-width: 991px) {
+    /** Header **/
+    nav {
+        margin-top: 10px;
+        margin-bottom: 16.5px;
+    }
+    /** Accomodation **/
+    #accomodation {
+        display: flex;
+        flex-direction: column;
+    }
+    #accomodation article {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    #accomodation aside {
+        width: 100%;
+        margin: 0px 0px 20px 0px;
+        height: auto;
+    }
+    aside .stars {
+        margin-top: 70px;
+    }
+}
+
+
+/** Version Mobile Iphone 6/7/8 **/
+
+@media (max-width: 767px) {
+    /** Global Settings **/
+    #bloc_page {
+        width: 100vw;
+        margin: auto;
+    }
+    /** Header's Settings **/
+    header {
+        display: inline;
+        width: 100%;
+    }
+    nav {
+        width: 100%;
+        display: flex;
+    }
+    nav a {
+        text-decoration: none;
+        color: black;
+        border-bottom: 4px #F2F2F2 solid;
+        width: 50%;
+        height: 20px;
+        padding-bottom: 15px;
+        margin: 40px 0px 30px 0px;
+        text-align: center;
+        font-size: 1.6em;
+        font-weight: bolder;
+    }
+    nav a:hover {
+        color: #0065FC;
+        border-bottom: 4px #0065FC solid;
+        margin-bottom: white;
+        border-top: none;
+        padding-bottom: 15px;
+    }
+    .suscribe {
+        width: auto;
+        border-bottom: white;
+        color: #0065FC;
+        margin: 0px 20px 15px 0px;
+        position: absolute;
+        top: 20px;
+        right: 0px;
+        font-size: 1.4em;
+        font-family: sans-serif;
+        font-weight: bolder;
+        padding-left: 150px;
+    }
+    .suscribe:hover {
+        border-bottom: white;
+    }
+    #logo {
+        margin: 27px 0px 0px 20px;
+    }
+    /** Bloc Search **/
+    .title {
+        padding: 0em 1.5em 0em 0em;
+        font-family: sans-serif;
+        font-weight: bold;
+        font-size: 1.3em;
+        margin-left: 20px;
+    }
+    .secondline {
+        font-size: 1.2em;
+    }
+    .search_desktop {
+        display: none;
+    }
+    #search {
+        display: flex;
+        position: relative;
+    }
+    .search input {
+        padding-right: 95px;
+    }
+    #bloc_search {
+        margin-left: 20px;
+        position: relative;
+    }
+    .search button {
+        position: absolute;
+        top: 14px;
+        border-radius: 10px 10px 10px 10px;
+    }
+    /** Filters **/
+    #bloc_filter .title {
+        width: 100%;
+    }
+    #info {
+        margin-left: 10px;
+    }
+    /** Accomodation **/
+    #accomodation {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    #accomodation article {
+        width: 100%;
+        height: 100%;
+        margin-bottom: 20px;
+        background-color: white;
+    }
+    #accomodation aside {
+        width: 100%;
+        margin: 0px 0px 20px 0px;
+        height: auto;
+        border-radius: 0px;
+    }
+    #accomodation .text_top {
+        margin-left: 35px;
+    }
+    #accomodation .text_bottom {
+        display: flex;
+        width: 100%;
+        margin-left: 35px;
+    }
+    #accomodation #pictures {
+        display: contents;
+    }
+    #pictures #image_hebegement1 {
+        width: 82%;
+        margin: 0% 10% 8% 8%;
+        height: 160px;
+        box-shadow: 10px 10px 20px #F2F2F2;
+    }
+    #pictures #image_hebegement2 {
+        width: 82%;
+        margin: 0% 10% 8% 8%;
+        height: 160px;
+        box-shadow: 10px 10px 20px #F2F2F2;
+    }
+    #pictures #image_hebegement3 {
+        width: 82%;
+        margin: 0% 10% 8% 8%;
+        height: 160px;
+        box-shadow: 10px 10px 20px #F2F2F2;
+    }
+    #pictures #image_hebegement4 {
+        width: 82%;
+        margin: 0% 10% 8% 8%;
+        height: 160px;
+        box-shadow: 10px 10px 20px #F2F2F2;
+    }
+    #pictures #image_hebegement5 {
+        width: 82%;
+        margin: 0% 10% 8% 8%;
+        height: 160px;
+        box-shadow: 10px 10px 20px #F2F2F2;
+    }
+    #pictures #image_hebegement6 {
+        width: 82%;
+        margin: 0% 10% 0% 8%;
+        height: 160px;
+        box-shadow: 10px 10px 20px #F2F2F2;
+    }
+    /* Section activités */
+    #activities #activity {
+        height: 100%;
+    }
+    #activity h2 {
+        margin: -5px 0px 5px 35px;
+    }
+    #activities #activities_bloc {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        flex-direction: row;
+    }
+    #activities #image1 {
+        width: 310px;
+        margin: 10px 10px 30px 12px;
+        height: 160px;
+        box-shadow: 10px 10px 15px #F2F2F2;
+    }
+    #activities #image2 {
+        width: 310px;
+        margin: 10px 10px 30px 12px;
+        height: 160px;
+        box-shadow: 10px 10px 15px #F2F2F2;
+    }
+    #activities #image3 {
+        width: 310px;
+        margin: 10px 10px 30px 12px;
+        height: 160px;
+        box-shadow: 10px 10px 15px #F2F2F2;
+    }
+    #activities #image4 {
+        width: 310px;
+        margin: 10px 10px 30px 12px;
+        height: 160px;
+        box-shadow: 10px 10px 15px #F2F2F2;
+    }
+    #activities #image5 {
+        width: 310px;
+        margin: 10px 10px 30px 12px;
+        height: 160px;
+        box-shadow: 10px 10px 15px #F2F2F2;
+    }
+    #activities #image6 {
+        width: 310px;
+        margin: 10px 10px 30px 12px;
+        height: 160px;
+        box-shadow: 10px 10px 15px #F2F2F2;
+    }
+    #activity .nom {
+        width: 97.5%;
+        left: -0.75px;
+    }
+    /** Footer **/
+    footer {
+        display: flex;
+        flex-direction: column;
+    }
+    footer .bloc_footer {
+        margin-left: 10%;
+        width: 100%;
+    }
+}
